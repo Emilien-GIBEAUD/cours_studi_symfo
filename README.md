@@ -1,0 +1,3 @@
+Cours qui présente le pattern MVC puis fait un MVC en PHP pur.
+Twig est ensuite installé avec composer.
+C'est pas du symfony ...
