@@ -1,5 +1,11 @@
 twig:
     file_name_pattern: '*.twig'
+    globals:
+        var_glob1: 'Variable globale contenu dans /config/packages/twig.yaml. '
+        var_glob2: 'Une autre variable globale. '
+        var_1: 5
+        var_2: 25
+        var_3: 12
 
 when@test:
     twig:
