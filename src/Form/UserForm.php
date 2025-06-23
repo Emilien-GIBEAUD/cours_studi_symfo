@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -13,13 +14,9 @@ class UserForm extends AbstractType
     {
         $builder
             ->add('email')
-            ->add('roles')
-            ->add('password')
+            ->add('password',PasswordType::class)
             ->add('firstName')
             ->add('lastName')
-            ->add('createdAt', null, [
-                'widget' => 'single_text',
-            ])
             ->add('pseudo')
         ;
     }
